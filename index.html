@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harith's Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: 'Inter', sans-serif;
+        }
+        .nexora-font {
+            font-family: cursive;
+        }
+        .aspirations-font {
+            font-family: 'Dancing Script', cursive;
+        }
+    </style>
+</head>
+<body class="flex items-center justify-center min-h-screen p-4">
+
+    <div class="bg-[#E3E5D4] rounded-lg shadow-xl p-8 max-w-4xl w-full text-[#333]">
+
+        <nav class="mb-8">
+            <ul class="flex justify-center space-x-8 text-[#333] font-semibold text-lg">
+                <li><a href="#" id="me-link" class="border-b-2 border-[#333] pb-1">Me</a></li>
+                <li><a href="#" id="working-on-link" class="hover:border-b-2 hover:border-[#333] pb-1 transition-colors">What I'm working on</a></li>
+                <li><a href="#" id="aspirations-link" class="hover:border-b-2 hover:border-[#333] pb-1 transition-colors">Aspirations</a></li>
+            </ul>
+        </nav>
+
+        <!-- Me Page Content -->
+        <div id="me-page" class="page-content">
+            <div class="flex flex-col items-center text-center mb-8">
+                <svg class="w-24 h-24 mb-4" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="30" r="20" fill="#FFE5A8" stroke="#333" stroke-width="2"/>
+                    <path d="M50 50 L50 80" stroke="#333" stroke-width="2" />
+                    <path d="M50 60 L30 50" stroke="#333" stroke-width="2" />
+                    <path d="M50 60 L70 50" stroke="#333" stroke-width="2" />
+                    <path d="M50 80 L40 95" stroke="#333" stroke-width="2" />
+                    <path d="M50 80 L60 95" stroke="#333" stroke-width="2" />
+                    <circle cx="45" cy="25" r="2" fill="#333" />
+                    <circle cx="55" cy="25" r="2" fill="#333" />
+                    <path d="M45 35 Q50 40 55 35" stroke="#333" stroke-width="1.5" fill="none" />
+                </svg>
+                <h1 class="text-3xl font-bold text-[#333] mb-2">Hi, my name Harith,</h1>
+                <p class="text-xl text-[#333]">welcome to my page</p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 text-[#333] leading-relaxed">
+                <div>
+                    <p>Hi! I'm an 18-year-old programming enthusiast just starting my journey into the world of code. I'm especially interested in web development and game design, and I love experimenting with new languages and frameworks.</p>
+                </div>
+                <div>
+                    <p>When I'm not coding, you'll probably find me watching anime (big fan of Attack on Titan), playing basketball, or gaming. I'm always looking to connect with others who share similar interests, whether it's tech, sports, or pop culture.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- What I'm working on Page Content -->
+        <div id="working-on-page" class="page-content hidden">
+            <div class="flex flex-col items-center text-center mb-8">
+                <h1 class="text-3xl font-bold text-[#333] mb-4">What I'm working on...</h1>
+            </div>
+            <div class="text-center leading-relaxed">
+                <p class="mb-8">Nexora is a forward-thinking tech company dedicated to crafting custom websites through skilled programming and creative design. We focus on delivering unique, user-friendly websites that are tailored to meet the specific needs of our clients. Whether it's building a sleek, modern site for a business or developing an engaging online platform.</p>
+            </div>
+            <div class="relative flex flex-col items-center justify-center w-full mt-12">
+                <div class="w-48 h-48 bg-[#D9D9D9] rounded-full flex items-center justify-center relative">
+                    <svg class="absolute top-2 right-2 w-8 h-8 text-[#333]" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+                    </svg>
+                    <svg class="w-24 h-24 text-[#333]" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M40 70 L40 50 L20 50 L20 70 M60 70 L60 50 L80 50 L80 70 M20 70 L80 70 L80 80 L20 80 Z" fill="none" stroke="currentColor" stroke-width="5" />
+                        <path d="M45 40 Q50 35 55 40 L55 50 H45 Z" fill="currentColor"/>
+                    </svg>
+                </div>
+                <h2 class="nexora-font text-3xl mt-4 text-[#333]">Nexora</h2>
+            </div>
+        </div>
+
+        <!-- Aspirations Page Content -->
+        <div id="aspirations-page" class="page-content hidden">
+            <h1 class="text-3xl font-bold text-[#333] mb-8 text-center">Aspirations</h1>
+            <div class="text-left mx-auto max-w-lg mb-8 aspirations-font text-2xl">
+                <h2 class="font-bold mb-4">Hopes & Dreams:</h2>
+                <ul class="list-disc list-inside space-y-2">
+                    <li>Master web development and programming</li>
+                    <li>Build innovative and impactful projects</li>
+                    <li>Collaborate with other passionate tech enthusiasts</li>
+                    <li>Create websites that combine functionality with great design</li>
+                    <li>Continue learning and evolving in the tech world</li>
+                </ul>
+            </div>
+            <div class="aspirations-font text-2xl mt-12 text-center">
+                <p>Thanks for reading :)</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        const meLink = document.getElementById('me-link');
+        const workingOnLink = document.getElementById('working-on-link');
+        const aspirationsLink = document.getElementById('aspirations-link');
+        const mePage = document.getElementById('me-page');
+        const workingOnPage = document.getElementById('working-on-page');
+        const aspirationsPage = document.getElementById('aspirations-page');
+
+        const pages = {
+            'me': { link: meLink, page: mePage },
+            'working-on': { link: workingOnLink, page: workingOnPage },
+            'aspirations': { link: aspirationsLink, page: aspirationsPage }
+        };
+
+        function showPage(pageId) {
+            // Hide all pages and remove active class from all links
+            for (const key in pages) {
+                pages[key].page.classList.add('hidden');
+                pages[key].link.classList.remove('border-b-2');
+                pages[key].link.classList.add('hover:border-b-2');
+            }
+            
+            // Show the selected page and add active class to its link
+            pages[pageId].page.classList.remove('hidden');
+            pages[pageId].link.classList.add('border-b-2');
+            pages[pageId].link.classList.remove('hover:border-b-2');
+        }
+
+        meLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            showPage('me');
+        });
+        workingOnLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            showPage('working-on');
+        });
+        aspirationsLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            showPage('aspirations');
+        });
+
+        // Initially show the 'Me' page
+        showPage('me');
+    </script>
+
+</body>
+</html>
